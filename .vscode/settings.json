@@ -1,0 +1,19 @@
+{
+    "cSpell.customDictionaries": {
+        "custom-dictionary-workspace": {
+            "name": "custom-dictionary-workspace",
+            "path": "${workspaceFolder:16 projeto jogo da memoria}/.cspell/custom-dictionary-workspace.txt",
+            "addWords": true,
+            "scope": "workspace"
+        }
+    },
+    "cSpell.ignoreWords": [
+        "annie",
+        "aots",
+        "eren",
+        "erentitan",
+        "hange",
+        "levi",
+        "mikasa"
+    ]
+}

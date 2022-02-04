@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+@keyframes changeColor {
+    0%{background-color: rgb(255, 251, 0);}
+    25%{background-color: rgb(253, 198, 17) ;}
+    50%{background-color: rgb(10, 144, 233)transparent;}
+    75%{background-color: rgb(184, 145, 100);}
+    100% {background-color: rgb(11, 26, 243)transparent;}
+    
+}
+
+.container{
+    color:brown;
+    font-family:fantasy;
+    font-size: x-large;
+    font-style: inherit;
+    letter-spacing: 6px;
+    margin: 10px;
+    padding:10px;
+    box-sizing: content-box;
+    animation-name: changeColor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+   
+
+}
+
+div{
+    text-align: center;
+}
+
+img{
+    width: 130px;
+    height: 130px;
+    
+}
+
+
+body{
+    background-image: url(./assets/images/b.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Righteous', sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aliceblue;
+
+}
+
+.card{
+    width: 150px;
+    height: 150px;
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    position:relative;
+    text-align:justify;
+    /* background-color: aliceblue; */
+    right: 100px;
+    left: 350px;
+
+    transform-style: preserve-3d;
+    transition: transform .5s;
+
+
+}
+
+
+.card_back, .card_front{
+    width: 95%;
+    height: 95%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+    backface-visibility: hidden;
+
+
+}
+
+.flip{
+    transform: rotateY(180deg);
+
+
+}
+
+.card_front{
+    transform: rotateY(180deg);
+    background-color: rgb(168, 14, 14);
+
+
+
+}
+
+.card_back{
+    color: rgb(168, 14, 14);
+    background-color: rgb(236, 222, 24);
+    font-size: 30px;
+
+
+}
+
+#gameOver{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+}
+
+#restart{
+    padding: 20px;
+    font-size: 20px;
+    background-color: yellow;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+
+
+
+}
+
+#gameBoard{
+    display:flex;
+    flex-flow: row wrap;
+    align-content:flex;
+    width: 800px;
+    color: cadetblue;      
+
+
+
+}
